@@ -1,12 +1,11 @@
-# 初めてのプランニング
+# 初めてのプログラミング
 ## 1.開発環境を用意する
 * 1-1.エディタ
     * VSCode
         * https://code.visualstudio.com/    
             * 拡張機能"Japanese Language Pack"と"Python"を入れておきましょう
                 * https://www.javadrive.jp/vscode/install/index4.html#section1
-                ![vscode_python](images/vscode_python.jpg)
-
+                ![vscode_python](../images/vscode_python.jpg)
 * 1-2.プログラミング言語
     * Python
         * https://www.python.org/downloads/
@@ -18,7 +17,7 @@
 * 2-1.ファイル作成
     * 新規フォルダを作成し、VSCodeで開く(1-2で作成つくったフォルダそのままでもOK)
     * 新規ファイルを作成し、名前を`[好きな名前].py`にする。
-    ![vscode_newfile](images/vscode_newfile.jpg)
+    ![vscode_newfile](../images/vscode_newfile.jpg)
 * 2-2.ファイル内にコードを書いてみる
 
         ```python:step1
@@ -29,9 +28,9 @@
 ## 3.プログラムを実行する
 * 3-1. `ctrl + S`or`cmd + S`でファイルを保存する
 * 3-2 画面上部の"実行"から、"デバッグの開始"をクリック。デバッグ構成は"Python"を選ぶ。
-    ![vscode_run](images/vscode_run.jpg)
+    ![vscode_run](../images/vscode_run.jpg)
     * `aaa`という実行結果が出力されたら成功！
-    ![vscode_result](images/vscode_result.jpg)
+    ![vscode_result](../images/vscode_result.jpg)
 
 * 3-3いろんなプログラムを実行してみよう
     ```python:step2.py
