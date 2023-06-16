@@ -20,10 +20,10 @@
     ![vscode_newfile](../images/vscode_newfile.jpg)
 * 2-2.ファイル内にコードを書いてみる
 
-        ```python:step1
-        # 「'aaa'と出力してね」という指示
-        print('aaa')
-        ```
+    ```python:step1
+    # 「'aaa'と出力してね」という指示
+    print('aaa')
+    ```
 
 ## 3.プログラムを実行する
 * 3-1. `ctrl + S`or`cmd + S`でファイルを保存する
