@@ -1,0 +1,16 @@
+@startuml join circle
+title 新規メンバーが活動に参加
+|メンバー|
+    start
+    :teamsに参加;
+|運営メンバー|
+    :いちゃ部屋メッセージを送信;
+|メンバー|
+    :welcomeページに遷移;
+    :slackに登録;
+    :trelloに登録;
+    :SDCDに登録;
+|サークル|
+    :メンバー一覧]
+stop
+@enduml

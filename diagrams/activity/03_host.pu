@@ -1,0 +1,13 @@
+@startuml host
+title 活動参加
+|メンバー|
+    start
+    :活動日一覧から活動日を作成;
+|システム|
+    :活動日リスト]
+|メンバー|
+    :当日にGatherのURLを取得;
+    :SlackにURLを通知;
+    :時間になったらGatherに入室;
+stop
+@enduml

@@ -1,0 +1,88 @@
+@startuml EntityRelationship
+
+package "meta_coupon" as meta_coupon <<Database>> {
+
+    entity "users" as users {
+        + id [PK]
+        --
+        name
+        pass
+        introduction
+        month
+        day
+       }
+
+    entity "activedays" as activedays {
+        + id [PK]
+        --
+        # owner_id [FK]
+        # product_id [FK]
+        --
+        activeday
+        theme
+        detail
+        place
+        beginner_flag
+    }
+
+    entity "activeday_participants" as activeday_participants {
+    --
+    # activeday_id [FK]
+    # user_id [FK]
+    --
+    }
+
+    entity "products" as products {
+        + id [PK]
+        --
+        # owner_id [FK]
+        --
+        name
+        detail
+        programing_language
+        tools
+        trello_link
+        created_at
+    }
+
+    entity "product_collaborators" as product_collaborators {
+        --
+        # product_id [FK]
+        # user_id [FK]
+        --
+    }
+
+    entity "reference_books" as reference_books {
+        + id [PK]
+        --
+        # recommender_id [FK]
+        --
+        title
+        author
+        introduction
+        reference_url
+    }
+
+    entity "book_reviews" as book_reviews {
+        + id [PK]
+        --
+        # book_id [FK]
+        # reviewer_id [FK]
+        --
+        evaluation_value
+        review_title
+        review
+    }
+
+users --ri--o{activedays
+users --ri--o{activeday_participants
+users --ri--o{products
+users --ri--o{product_collaborators
+users --ri--o{reference_books
+users --ri--o{book_reviews
+activedays --le--o{activeday_participants
+products --le--o{product_collaborators
+products --up--o{activedays
+reference_books --le--o{book_reviews
+
+@enduml

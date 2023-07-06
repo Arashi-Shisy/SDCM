@@ -1,0 +1,13 @@
+@startuml join activedays
+title 活動参加
+|メンバー|
+    start
+    :活動日一覧を確認;
+    :興味ある活動に参加表明;
+|システム|
+    :参加者リスト]
+|メンバー|
+    :当日にSlackでURLを確認
+    :時間になったらGatherに入室;
+stop
+@enduml
